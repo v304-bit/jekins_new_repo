@@ -3,33 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Jenkins CI/CD</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Jenkins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0073e6;
+        }
+    </style>
 </head>
 <body>
-    <div class="welcome-page">
-        <div class="welcome-text">
-            <h1>Welcome to Jenkins CI/CD Study Board!</h1>
-            <p>Master Jenkins with us! Learn CI/CD concepts step by step.</p>
+    <header>
+        <h1>Welcome to Jenkins</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Hello, Welcome to Jenkins!</h2>
+            <p>Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD). It helps automate the process of building, testing, and deploying software applications. Jenkins is widely used by DevOps teams to streamline development pipelines.</p>
         </div>
-        <div class="buttons">
-            <a href="short-hands.html" class="button">Jenkins Short Hands</a>
-            <a href="about.html" class="button">About Jenkins</a>
-        </div>
-    </div>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
-
+        <div class="card">
+            <h3>Key
