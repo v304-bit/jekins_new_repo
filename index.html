@@ -5,58 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Jenkins</title>
     <style>
+        /* Page Background */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background: linear-gradient(to bottom, #ffcccb, #ff9966); /* Peach and Orange gradient */
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
+        /* Centered Card Box */
         .card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             width: 80%;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            padding: 30px;
+            text-align: center;
+            transform: translateY(-20%);
         }
-        h1 {
+        /* Header Styling */
+        header {
+            color: white;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
             font-size: 36px;
-            color: #333;
+        }
+        /* Card Title */
+        h2 {
+            color: #ff6633; /* Orange shade */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #ff6633;
+            font-size: 24px;
+            margin-top: 20px;
         }
         p {
             font-size: 18px;
             color: #555;
             line-height: 1.6;
         }
+        /* Jenkins Image */
+        .jenkins-image {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        /* Key Features List */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555;
+        }
         .highlight {
             font-weight: bold;
-            color: #0073e6;
+            color: #ff6633; /* Orange for highlights */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Jenkins</h1>
-    </header>
 
-    <div class="container">
-        <div class="card">
+    <div class="card">
+        <header>
+            <h1>Welcome to Jenkins</h1>
+        </header>
+
+        <div>
             <h2>Hello, Welcome to Jenkins!</h2>
             <p>Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD). It helps automate the process of building, testing, and deploying software applications. Jenkins is widely used by DevOps teams to streamline development pipelines.</p>
+
+            <img src="https://www.jenkins.io/images/logos/jenkins/jenkins-logo.svg" alt="Jenkins Logo" class="jenkins-image">
         </div>
 
-        <div class="card">
-            <h3>Key
+        <div>
+            <h3>Key Features of Jenkins:</h3>
+            <ul>
+                <li><span class="highlight">Automation</span>: Automates repetitive tasks in the software development lifecycle.</li>
+                <li><span class="highlight">Pipeline</span>: Provides a way to define and visualize the process of application delivery.</li>
+                <li><span class="highlight">Integration</span>: Easily integrates with other tools such as Docker, Git, and AWS.</li>
+                <li><span class="highlight">Extensibility</span>: Jenkins offers many plugins to extend its functionality.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>How Does Jenkins Work?</h3>
+            <p>Jenkins runs as a standalone application or as a servlet in a web container. It listens to a queue of tasks, performs them based on predefined scripts (such as <code>Jenkinsfile</code>), and then provides feedback on the build and deployment status.</p>
+        </div>
+    </div>
+
+</body>
+</html>
