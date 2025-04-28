@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Jenkins Study Board</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f8ff;
-        }
-        h1 {
-            color: #4CAF50;
-            font-size: 50px;
-        }
-        p {
-            font-size: 20px;
-            color: #333;
-        }
-        .container {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-        }
-    </style>
+    <title>Welcome to Jenkins CI/CD</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Jenkins Study Board!</h1>
-        <p>Your continuous integration journey starts here!</p>
+    <div class="welcome-page">
+        <div class="welcome-text">
+            <h1>Welcome to Jenkins CI/CD Study Board!</h1>
+            <p>Master Jenkins with us! Learn CI/CD concepts step by step.</p>
+        </div>
+        <div class="buttons">
+            <a href="short-hands.html" class="button">Jenkins Short Hands</a>
+            <a href="about.html" class="button">About Jenkins</a>
+        </div>
     </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 
